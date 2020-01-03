@@ -1,0 +1,209 @@
+@import '~common/stylus/index'
+.confrim-dialog 
+  .van-dialog__message 
+    font-size: 0.32rem
+  .van-button__text 
+    font-size: 0.28rem
+.add-address 
+  background: #F4F4F4
+  min-height: 100vh
+  padding-top: 0.2rem
+  overflow: hidden
+  .tag_wrapper 
+    position: relative
+    width: 100%
+    height: 100%
+    .title 
+      height: 1.04rem
+      font-size: 0.36rem
+      color: #000
+      line-height: 1.04rem
+      text-align: center
+      border-1px(#E9E9E9)
+    >ul 
+      padding: 0.16rem 0.32rem 0
+      >li 
+        height: 1.12rem
+        line-height: 1.12rem
+        font-size: 0.32rem
+        color: #000
+        border-1px(#f4f4f4)
+        position: relative
+        &.on:before 
+          content: ''
+          aspect(0.44rem)
+          display: block
+          position: absolute
+          right: 0.32rem
+          top: 50%
+          transform: translateY(-50%)
+          bg-image('../../common/images/tag_close.png')
+        input 
+          width: 80%
+          font-size: 0.32rem
+          color: #000
+          position: absolute
+          left: 0
+          top 0
+          &::-webkit-input-placeholder 
+            font-size: 0.32rem
+            color: #959595
+        .van-cell 
+          height: 1rem
+          width: 80%
+    .tag_btn 
+      aspect(6.86rem, 0.88rem)
+      background: #DC2828
+      border-radius: 0.44rem
+      color: #fff
+      font-size: 0.32rem
+      position: absolute
+      bottom: 0.24rem
+      left: 0.32rem
+  .info 
+    padding-left: 0.3rem
+    padding-bottom: 0.86rem
+    background: #ffffff
+    .inputs 
+      aspect(100%, 1.12rem)
+      dis-flex()
+      align(center, space-between)
+      border-bottom: 0.01rem solid #F4F4F4
+      padding-right: 0.3rem
+      &.tag_inputs 
+        border-bottom: none
+        border-top: 0.01rem solid #F4F4F4
+        .tag_add 
+          dis-flex()
+          align-items: center
+          .txt 
+            font-size: 0.28rem
+            color: #000
+            margin-right: 0.16rem
+      .sel_area 
+        flex: 1
+        dis-flex()
+        height: 100%
+        align(center, space-between)
+        .sel 
+          font-size: 0.32rem
+          color: #333
+      .arrow 
+        aspect(0.14rem)
+        color: #898989
+      &.area 
+        height: 1.9rem
+        border-bottom: none
+        align-items: flex-start
+        padding-top: 0.3rem
+      .left 
+        font-size: 0.32rem
+        color: #333333
+        width: 1.6rem
+      >>>.switch
+        border-radius 0.4rem
+        font-size 0.4rem
+        width 0.8rem
+        .van-switch__node
+          border-radius 0.4rem
+          width 0.4rem
+          height 0.4rem
+      .van-switch--on .van-switch__node
+        transform translateX(0.41rem)  
+      input, textarea 
+        font-size: 0.32rem
+        color: #333333
+        flex: 1
+        // margin-left: 0.2rem
+      textarea 
+        border: none
+        height: 100%
+      .right 
+        flex: 1
+        display: flex
+        align-items: center
+        img 
+          aspect(0.44rem)
+  .default 
+    aspect(100%, 1.12rem)
+    dis-flex()
+    align(center, space-between)
+    padding: 0 0.3rem
+    background: #ffffff
+    margin-top: 0.2rem
+    .left 
+      font-size: 0.32rem
+      color: #333333
+  .add_btn 
+    aspect(6.9rem, 1rem)
+    background: #DC2828
+    border-radius: 0.5rem
+    line-height: 1rem
+    font-size: 0.36rem
+    color: #ffffff
+    border: none
+    display: block
+    margin: 0.6rem auto
+    &.del_btn 
+      border: 0.01rem solid #DC2828
+      background: #fff
+      color: #DC2828
+      transform: translateY(-0.3rem)
+  >>>.mint-switch-input:checked + .mint-switch-core 
+    background: #07c160
+    border-color: #07c160
+  
+.pannel
+  >>>.van-popup 
+    h2.title
+      height 1.04rem
+      line-height 1.04rem
+      padding 0 .32rem
+      color #000
+      font-size .36rem
+    .van-hairline--top-bottom::after
+      border-top none 
+    .van-tab--active .van-ellipsis
+      color #dc2828
+    .van-tabs__line
+      height .04rem
+      background #dc2828   
+      min-width 1rem 
+    .van-ellipsis
+      font-size .32rem
+      color #000
+    .van-tab
+      flex inherit 
+      margin-right: .26rem
+    .van-loading
+      position: absolute
+      left 50%
+      top: 50% 
+      transform: translateX(-50%) translateY(-50%) 
+    .van-tab__pane
+      height 7.92rem
+      overflow-y scroll
+      .list
+        padding 0 .36rem
+        >li 
+          aspect(100%, .86rem)
+          dis-flex()
+          align(center, space-between)
+          font-size .32rem
+          color #4A4A4A
+          position relative
+          &.on
+            color #dc2828
+            &:after 
+              content: ''
+              aspect(0.44rem)
+              display: block
+              position: absolute
+              right: 0.32rem
+              top: 50%
+              transform: translateY(-50%)
+              bg-image('../../common/images/tag_close.png')
+              
+    .van-tabs__wrap
+      padding 0 .32rem
+      height .88rem    
